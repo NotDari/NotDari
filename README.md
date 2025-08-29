@@ -1,5 +1,7 @@
-## Hi there 👋
+## Hi there I'm Dariush 👋
 
+
+My contributions: ![Contribution Shooter](builds/contribution-shooter.gif)
 <!--
 **NotDari/NotDari** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
