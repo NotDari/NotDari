@@ -1,7 +1,10 @@
 ## Hi there I'm Dariush 👋
 
 
-My contributions: ![Contribution Shooter](builds/contribution-shooter.gif)
+### Contributions: ![Contribution Shooter](builds/contribution-shooter.gif)
+
+
+### Stats: ![Major Stats](builds/major-stats.gif) ![Language Leaderboard](builds/language-leaderboard.gif)
 <!--
 **NotDari/NotDari** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
