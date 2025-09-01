@@ -37,6 +37,12 @@ jobs:
           GITHUB_USERNAME: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.Github-Profile-Stats }}
 
+      - name: Debug token
+        run: |
+          echo "Token exists: ${GITHUB_TOKEN}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.Github-Profile-Stats }}
+
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
