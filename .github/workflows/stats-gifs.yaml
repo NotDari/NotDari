@@ -1,5 +1,6 @@
 name: Build Stats gifs
 
+#Temp on push
 on:
   push:
 
