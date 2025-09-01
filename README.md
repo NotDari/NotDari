@@ -7,7 +7,7 @@
 
 
 ## Stats: 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between;">
   <img src="builds/major-stats.gif" width="500"> 
   <img src="builds/language-leaderboard.gif" width="300"> 
 </div>
