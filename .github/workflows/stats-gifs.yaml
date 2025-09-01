@@ -1,10 +1,7 @@
 name: Build Stats gifs
 
 on:
-  schedule:
-    # Runs every day at midnight UTC
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+  push:
 
 permissions:
   contents: write
@@ -53,5 +50,5 @@ jobs:
         run: |
           git add builds/major-stats.gif
           git add builds/language-leaderboard.gif
-          git diff-index --quiet HEAD || git commit -m "GIF DAILY UPDATE"
+          git diff-index --quiet HEAD || git commit -m "GIF UPDATE"
           git push
