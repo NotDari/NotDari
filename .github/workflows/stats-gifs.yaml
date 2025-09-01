@@ -1,0 +1,57 @@
+name: Build Stats gifs
+
+on:
+  schedule:
+    # Runs every day at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Retro Stats GIFS repo
+        run: git clone https://github.com/NotDari/Retro-Github-Stats project
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.12
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+        working-directory: project
+
+      - name: Build GIFS
+        run: |
+          python major-stats.py
+          python language-leaderboard.py
+        working-directory: project
+        env:
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Copy GIF to profile repo
+        run: |
+          mkdir -p builds
+          cp project/build/major-stats.gif builds/major-stats.gif
+          cp project/build/language-leaderboard.gif builds/language-leaderboard.gif
+          
+
+      - name: Commit and push GIF
+        run: |
+          git add builds/major-stats.gif
+          git add builds/language-leaderboard.gif
+          git diff-index --quiet HEAD || git commit -m "GIF UPDATE"
+          git push
