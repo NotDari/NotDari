@@ -28,11 +28,6 @@ jobs:
         run: pip install -r requirements.txt
         working-directory: project
       
-      - name: Debug token
-        run: |
-          echo "Token exists: ${GITHUB_TOKEN}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.Github-Profile-Stats }}
 
       - name: Build GIFS
         run: |
@@ -41,7 +36,7 @@ jobs:
         working-directory: project
         env:
           GITHUB_USERNAME: ${{ github.repository_owner }}
-          GITHUB_TOKEN: ${{ secrets.Github-Profile-Stats }}
+          GITHUB_TOKEN: ${{ secrets.Profile_Stats }}
 
       
 
