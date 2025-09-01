@@ -8,8 +8,8 @@
 
 ## Stats: 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <img src="builds/major-stats.gif" width="420"> 
-  <img src="builds/language-leaderboard.gif" width="180"> 
+  <img src="builds/major-stats.gif" width="560"> 
+  <img src="builds/language-leaderboard.gif" width="240"> 
 </div>
 <!--
 **NotDari/NotDari** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
