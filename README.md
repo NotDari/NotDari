@@ -7,10 +7,12 @@
 
 
 ## Stats: 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between;">
-  <img src="builds/major-stats.gif" width="500"> 
-  <img src="builds/language-leaderboard.gif" width="300"> 
-</div>
+<table>
+  <tr>
+    <td><img src="builds/major-stats.gif" width="500"></td>
+    <td><img src="builds/language-leaderboard.gif" width="300"></td>
+  </tr>
+</table>
 <!--
 **NotDari/NotDari** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
