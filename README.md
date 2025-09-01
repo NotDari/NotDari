@@ -1,10 +1,16 @@
 ## Hi there I'm Dariush 👋
 
+  I am a computer science science student at the University of Exeter. I have completed many projects both as assigned work and in my free time. Personal projects include making two apps, one full-stack with a springboot backend and java frontend. 
+  Please check out my work!
 
-### Contributions: ![Contribution Shooter](builds/contribution-shooter.gif)
+## Contributions: ![Contribution Shooter](builds/contribution-shooter.gif)
 
 
-### Stats: ![Major Stats](builds/major-stats.gif) ![Language Leaderboard](builds/language-leaderboard.gif)
+## Stats: 
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="builds/major-stats.gif" width="420"> 
+  <img src="builds/language-leaderboard.gif" width="180"> 
+</div>
 <!--
 **NotDari/NotDari** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
