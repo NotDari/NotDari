@@ -12,6 +12,7 @@
 I am a computer science student at the University of Exeter. I have completed many projects both as assigned work and independently. Personal projects include making two apps, one full-stack with a Spring Boot backend and Java frontend, multiple web scrapers and other smaller projects. 
 Please check out my work below!
 
+The stats and contribution GIFS update each day at midnight.
 
 
 ### Contact
@@ -54,7 +55,7 @@ Please check out my work below!
       <img src="builds/major-stats.gif" width="500">
       <a href="https://github.com/NotDari/Retro-Github-Stats">[NotDari/Retro-Github-Stats]</a>
     </td>
-    <td>
+    <td align="center">
       <img src="builds/language-leaderboard.gif" width="300">
       <a href="https://github.com/NotDari/Retro-Github-Stats">[NotDari/Retro-Github-Stats]</a>
     </td>
